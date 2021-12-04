@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:background="#FF9800"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+  <LinearLayout android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+      <androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="wrap_content"
+
+                                         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                         style="@style/ThemeOverlay.AppCompat.Dark"
+                                         android:id="@+id/toolbar"/>
+      <androidx.cardview.widget.CardView
+              android:layout_marginTop="25dp"
+              app:cardCornerRadius="15dp"
+              app:cardElevation="8dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:layout_width="match_parent" android:layout_height="wrap_content">
+          <LinearLayout android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+              <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_height="90dp"
+               app:civ_border_width="2dp"
+              android:id="@+id/hinhanh"
+              android:src="@drawable/pic"
+              app:civ_border_color="@android:color/holo_blue_dark"
+              android:layout_margin="10dp"
+              android:layout_gravity="center"
+              android:layout_width="90dp"/>
+
+              <com.google.android.material.textfield.TextInputLayout
+                      android:hint="Nhập Tên Đồ Ăn"
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:layout_margin="8dp"
+                      android:textColorHint="@android:color/holo_blue_dark"
+                      android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content">
+                  <EditText android:layout_width="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="18sp"
+                            android:textColorHint="@android:color/holo_blue_dark"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                  android:id="@+id/editten"/>
+              </com.google.android.material.textfield.TextInputLayout>
+
+              <com.google.android.material.textfield.TextInputLayout
+                      android:hint="Nhập Địa Chỉ"
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:layout_margin="8dp"
+                      android:textColorHint="@android:color/holo_blue_dark"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                  <EditText android:layout_width="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="18sp"
+                            android:textColorHint="@android:color/holo_blue_dark"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editdiachi"/>
+              </com.google.android.material.textfield.TextInputLayout>
+
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                      android:hint="Nhập giá tiền"
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:layout_margin="8dp"
+                      android:textColorHint="@android:color/holo_blue_dark"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                  <EditText android:layout_width="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColorHint="@android:color/holo_blue_dark"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editgiatien"/>
+
+              </com.google.android.material.textfield.TextInputLayout>
+              <com.google.android.material.textfield.TextInputLayout
+                      android:hint="Nhập số lượng"
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:layout_margin="8dp"
+                      android:textColorHint="@android:color/holo_blue_dark"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                  <EditText android:layout_width="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="18sp"
+                            android:inputType="number"
+                            android:textColorHint="@android:color/holo_blue_dark"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editsoluong"/>
+
+              </com.google.android.material.textfield.TextInputLayout>
+              <com.google.android.material.textfield.TextInputLayout
+                      android:hint="Nhập mô tả vv..."
+
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                      android:layout_margin="8dp"
+                      android:textColorHint="@android:color/holo_blue_dark"
+                      android:layout_width="match_parent"
+                      android:layout_height="120dp">
+                  <EditText android:layout_width="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="18sp"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:gravity="start"
+                            android:textColorHint="@android:color/holo_blue_dark"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/editmota"/>
+
+              </com.google.android.material.textfield.TextInputLayout>
+              <androidx.appcompat.widget.AppCompatSpinner android:layout_width="180dp"
+                                                          android:gravity="center"
+                                                          android:layout_marginBottom="10dp"
+                                                          android:layout_marginLeft="10dp"
+                                                          android:layout_height="70dp"
+                                                          android:id="@+id/spinerfolder"/>
+
+              <Button android:layout_width="wrap_content"
+                      android:layout_gravity="center"
+                      android:id="@+id/btnthem"
+                      android:text="Thêm"
+                      android:layout_marginBottom="15dp"
+                      android:textColor="@android:color/background_light"
+
+                      android:background="@drawable/custom_button_login"
+                      android:layout_marginTop="15dp"
+                      android:layout_height="wrap_content"
+              />
+          </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+  </LinearLayout>
+
+
+
+</ScrollView>

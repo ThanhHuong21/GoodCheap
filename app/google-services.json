@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "680345062104",
+    "project_id": "androidorderfoodapp",
+    "storage_bucket": "androidorderfoodapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680345062104:android:b1f336556af333e8aea5ad",
+        "android_client_info": {
+          "package_name": "com.huon.goodcheap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680345062104-7lk6fo31napdk088go58lhqulufbu1ci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.huon.goodcheap",
+            "certificate_hash": "bae1c4b7d183e235a92a1e5e2167d762deb668f0"
+          }
+        },
+        {
+          "client_id": "680345062104-c8a7hbii3rqtlvrm1nhp76avc9nh0lp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU7YC8VT9Hu1CnJfPYMhIOGtrgAsgTP28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680345062104-c8a7hbii3rqtlvrm1nhp76avc9nh0lp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="165dp"
+      app:cardBackgroundColor="#FF9800"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_height="180dp">
+    <LinearLayout android:layout_width="match_parent"
+
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:padding="7dp"
+                  android:gravity="end"
+                  android:id="@+id/txtngay"
+                  android:text="22/15/2021"
+                  android:textColor="@android:color/background_light"
+        />
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="70dp" android:layout_height="70dp"
+        android:id="@+id/hinhanh"
+                                                      android:src="@drawable/pic"
+        android:layout_gravity="center"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="17sp"
+                  android:padding="7dp"
+                  android:maxLines="1"
+                  android:singleLine="true"
+                  android:gravity="center"
+                  android:id="@+id/txtten"
+                  android:text="Rau cải bắp"
+                  android:textColor="#FAFAFB"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="17sp"
+                  android:padding="7dp"
+                  android:maxLines="1"
+                  android:singleLine="true"
+                  android:gravity="center"
+                  android:id="@+id/txtgiatien"
+                  android:text="Giá : 25000đ"
+                  android:textColor="#F8F7F5"
+        />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

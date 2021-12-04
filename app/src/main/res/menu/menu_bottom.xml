@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+   android:title="Trang Chủ"
+   android:id="@+id/trangchu"
+   android:icon="@drawable/house"
+   />
+    <item
+            android:title="Tạo Bảng Tin"
+            android:id="@+id/bantin"
+            android:icon="@drawable/plus"
+    />
+    <item
+            android:title="Thông Tin"
+            android:id="@+id/thongtin"
+            android:icon="@drawable/profile"
+    />
+</menu>

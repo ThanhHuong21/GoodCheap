@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="#FF9800"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+                style="@style/ThemeOverlay.AppCompat.Dark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/toolbar"/>
+         <ImageView android:layout_width="64dp"
+                    android:layout_below="@+id/toolbar"
+
+                   android:layout_centerHorizontal="true"
+                    android:layout_height="64dp"
+
+                    android:id="@+id/logo"
+         android:src="@drawable/food"/>
+
+      <LinearLayout android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/l1"
+                    android:layout_below="@+id/logo"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                  android:background="@drawable/custom_shape_cardview"
+                    android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+                android:hint="Nhập Email"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@android:color/background_dark"
+                android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:textColor="@android:color/background_dark"
+                      android:shadowRadius="1"
+
+                     android:inputType="textEmailAddress"
+                      android:shadowColor="@android:color/background_dark"
+                      android:layout_height="wrap_content"
+            android:id="@+id/editemail"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:hint="Nhập Mật Khẩu"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                app:passwordToggleEnabled="true"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@android:color/background_dark"
+                android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:textColor="@android:color/background_dark"
+                      android:shadowRadius="1"
+                       android:inputType="textPassword"
+                      android:shadowColor="@android:color/background_dark"
+                      android:layout_height="wrap_content"
+            android:id="@+id/editpass"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:hint="Nhập Lại Mật Khẩu"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:passwordToggleEnabled="true"
+                android:paddingRight="10dp"
+                android:textColorHint="@android:color/background_dark"
+                android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:textColor="@android:color/background_dark"
+                      android:shadowRadius="1"
+                       android:inputType="textPassword"
+                      android:shadowColor="@android:color/background_dark"
+                      android:layout_height="wrap_content"
+            android:id="@+id/editpass1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:hint="Nhập  Họ Tên"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:textColor="@android:color/background_dark"
+                      android:shadowRadius="1"
+
+                      android:shadowColor="@android:color/background_dark"
+                      android:layout_height="wrap_content"
+            android:id="@+id/editten"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:hint="Tên Cửa Hàng"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@android:color/background_dark"
+                android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:textColor="@android:color/background_dark"
+                      android:shadowRadius="1"
+                android:visibility="gone"
+                      android:shadowColor="@android:color/background_dark"
+                      android:layout_height="wrap_content"
+            android:id="@+id/edittencuahang"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:hint="Nhập số điện thoại"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@android:color/background_dark"
+                android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+            <EditText android:layout_width="match_parent"
+                      android:textColor="@android:color/background_dark"
+                      android:shadowRadius="1"
+
+                       android:inputType="number"
+                      android:shadowColor="@android:color/background_dark"
+                      android:layout_height="wrap_content"
+            android:id="@+id/editsdt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+      </LinearLayout>
+           <Button android:layout_width="120dp"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="18sp"
+
+                   android:layout_below="@+id/l1"
+                   android:textAllCaps="false"
+                   android:textColor="@android:color/background_light"
+                   android:background="@drawable/custom_button_login"
+                   android:layout_height="wrap_content"
+           android:layout_gravity="center"
+                   android:id="@+id/btnlogin"
+           android:layout_marginTop="10dp"
+           android:text="Đăng Ký"/>
+
+
+</RelativeLayout>

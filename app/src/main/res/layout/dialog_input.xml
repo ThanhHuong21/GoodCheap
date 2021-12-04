@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   android:layout_width="320dp"
+                                   app:cardCornerRadius="15dp"
+                                   app:cardElevation="6dp"
+                                   app:cardBackgroundColor="#FF9800"
+                                   android:layout_height="wrap_content">
+<LinearLayout android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+         <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+         android:id="@+id/editnhap"
+         android:textSize="18sp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center"
+                   android:hint="Nhập ở đây"
+         android:textColor="@android:color/background_light"
+         android:shadowColor="@android:color/background_light"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Xác Nhận"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@android:color/background_light"
+            android:id="@+id/btnxacnhan"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button_login"
+            android:layout_height="wrap_content"
+    android:layout_gravity="center"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
